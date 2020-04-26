@@ -71,6 +71,8 @@ var score_container = document.getElementById("score-container")
 var basic_screen = document.getElementsByClassName("basic-screen")[0]
 var timer_container = document.getElementsByClassName("timer-container")[0]
 var score_board = document.getElementsByClassName("score-board")[0]
+var focusMe = document.getElementById("focusMe")
+
 //------------------------------------------
 
 var basic_word = document.getElementsByClassName("basic-word")[0]
@@ -393,3 +395,5 @@ var basic_screen = document.getElementsByClassName("basic-screen")[0]
 var timer_container = document.getElementsByClassName("timer-container")[0]
 var score_board = document.getElementsByClassName("score-board")[0]
 */
+
+focusMe.focus()
