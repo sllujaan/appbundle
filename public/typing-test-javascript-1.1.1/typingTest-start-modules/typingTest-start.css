@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AppBundle</title>
-</head>
-
-<style>
 
 :root{
     --border-radius-box: 10px;
@@ -63,8 +54,6 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    background-color: orange;
 }
 
 .btn{
@@ -84,9 +73,6 @@ h1{
     font-size: x-large;
     text-shadow: 0 0 1px black;
     font-family: inherit;
-
-
-
 }
 
 .btn:hover {
@@ -104,22 +90,3 @@ h1{
     }
 
 }
-</style>
-<body>
-
-    <div class="top-container">
-        <div class="start-container">
-            <div>
-                <button id="1" class="btn" onclick="window.location = `typing-test-javascript-1.1.1`">Typing-Test App</button>
-            </div>
-            <div>
-                <button id="2" class="btn" onclick="window.location = `To-Do-App-Javascript-1.0.1`">To-Do App</button>
-            </div>
-            <div>
-                <button id="3" class="btn" onclick="window.location = `shoppingCart-javascript-2.0.0`">shopping-Cart App</button>
-            </div>
-        </div>
-    </div>
-    
-</body>
-</html>

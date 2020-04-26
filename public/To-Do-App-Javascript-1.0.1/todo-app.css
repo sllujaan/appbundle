@@ -1,0 +1,376 @@
+:root{
+    --task-width: 70%;
+    --edit-width: 10%;
+    --remove-width: 10%;
+    --border-radius: 10px;
+}
+
+body{
+    background-color:#FF0266;
+    user-select: none;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+h1{
+    background-color: #0336FF;
+    text-align: center;
+    width: 50%;
+
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+
+    padding: 20px 0;
+    color: white;
+    width: 100%;
+}
+
+.inputs-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.inputs-container-item{
+    text-align: center;
+    width: 45%;
+    transition: all 1s;
+    padding: 10px;
+}
+
+.task-input, .search-input{
+    max-width: 70%;
+    transition: all 1s;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: var(--border-radius);
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+
+    outline-style: unset;
+}
+
+.addTaskBtn{
+    width: 92.3594px;
+}
+
+.addTaskBtn, .searchBtn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+
+    border-radius: var(--border-radius);
+
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+
+    background-color: #0336FF;
+    color: white;
+
+    outline-style: unset;
+}
+
+
+
+.tasks-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    transition: all 1s;
+}
+
+
+
+.task-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 10px;
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+    
+    transition: all .1s;
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    border-radius: var(--border-radius);
+
+}
+
+.task-container-active {
+    height: auto;
+}
+
+
+.task-container:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/*
+.tasks-container-item{
+    text-align: center;
+    background-color: crimson;
+    display: flex;
+    width: 80%;
+}
+*/
+
+.itemTask{
+    width: 70%;
+    text-align: center;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+
+    border-radius: var(--border-radius);
+
+    
+}
+
+.task-btns{
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+
+    
+
+}
+
+i{
+    cursor: pointer;
+    transition: all .5s;
+}
+
+/*
+.fa-edit, .fa-trash-alt {
+    -webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.43);
+    box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.43);
+}
+*/
+
+.fa-edit:hover {
+    color: #0336FF;
+    transform: scale(1.3);
+}
+
+.fa-trash-alt:hover {
+    color: #FF0266;
+    transform: scale(1.3);
+}
+
+/*
+i:hover {
+    color: red;
+    transform: scale(1.3);
+}*/
+
+.edit-Task{
+    padding: 10px 20px;
+}
+
+.remove-Task{
+    padding: 10px 20px;
+}
+
+
+.on-edit-input{
+    width: 70%;
+    border: none;
+    padding: 10px;
+
+    border-radius: var(--border-radius);
+
+    outline-style: unset;
+}
+
+.saveBtn, .cancelBtn {
+    margin-left: 5px;
+}
+
+
+.saveBtn:hover{
+    transform: scale(1.1);
+    color: #0336FF;
+}
+
+.cancelBtn:hover{
+    transform: scale(1.1);
+    color: #FF0266;
+}
+
+.edited-task{
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-radius: var(--border-radius);
+
+}
+
+.highlighted{
+    background-color: rgba(3, 53, 255, 0.26);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .task-btns{
+        width: 100%;
+        border-top: 1px solid #0336FF;
+    }
+
+    .itemTask{
+        width: calc(100% - 20px);
+        overflow: visible;
+        word-wrap: break-word;
+    }
+
+    .edited-task{
+        width: 100%;
+    }
+
+    .on-edit-input{
+        width: 100%;
+    }
+
+    
+
+    
+}
+
+
+@media only screen and (max-width: 550px) {
+    .inputs-container-item{
+        width: 100%;
+    }
+    .task-input, .search-input{
+        max-width: 100%;
+    }
+    /*
+    .task{
+        width: 100%;
+    }*/
+}
+
+
+
+.container-tooltip {
+    background-color: rgba(3, 53, 255, 0.74);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+
+    -webkit-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    -moz-box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+    box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+
+    padding: 0 10px;
+
+    border-radius: var(--border-radius);
+    display: none;
+    max-width: 300px;
+    word-wrap: break-word;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.itemEdit{
+    background-color: yellowgreen;
+    width: 10%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.itemRemove{
+    background-color: royalblue;
+    width: 10%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+*/
+
+
+
+/*
+
+.task{
+    background-color: orange;
+    min-width: 70%;
+    word-wrap: break-word;
+
+}
+
+.edit, .remove{
+    background-color: mediumvioletred;
+    width: 10%;
+    word-wrap: break-word;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center; 
+}*/
