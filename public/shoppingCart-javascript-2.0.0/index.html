@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" defer src="index.js" ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h1>Shopping Cart </h1>
+            <div style="display: inline-block; position: relative;">
+                <button class="checkout-btn" onclick="onCheckoutClick()">Checkout!</button>
+                <div class="babage">0</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-container">
+        <h2>CheckOut!<i class="fas fa-times" onclick="hideCheckOut()"></i></h2>
+        <div class="picked-items">
+            <div class="picked-item">
+                <table class="items-table">
+                    <tr>
+                        <td>1</td>
+                        <td>testName</td>
+                        <td>1.1</td>
+                        <td>
+                           <input onChange="onQuantityChange(event)" class="quantity" name="quantity" type="number" value="1" min="1" max="10"  style="width: 40px;">
+                        </td>
+                        <td>
+                            <button class="remove-item">remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>test</td>
+                        <td>2.1</td>
+                        <td><input onChange="onQuantityChange(event)" class="quantity" name="quantity" type="number" value="1" min="1" max="10"  style="width: 40px;"></td>
+                        <td>
+                            <button class="remove-item">remove</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <table class="totals-table">
+                <tr>
+                    <td>Total Items</td>
+                    <td name="total-items">0</td>
+                </tr>
+
+                <tr>
+                    <td>Total Price</td>
+                    <td name="total-price">0</td>
+                </tr>
+            </table>
+            <button class="order-now" onclick="orderNow()">Order Now!</button>
+        </div>
+    </div>
+    <div id="background" class="popup_back-Container"></div>
+</body>
+</html>
