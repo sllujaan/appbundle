@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppBundle</title>
+</head>
+
+<style>
+
+:root{
+    --border-radius-box: 10px;
+    --border-radius-btn: 4px;
+}
+
+body {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;*/
+    font-size: x-large;
+    margin-top: 38px;
+    user-select: none;
+    font-family: pt-mono,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: #0336FF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    border-radius: var(--border-radius-box);
+    text-shadow: 0 0 2px white;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 0;
+
+}
+
+.start-container{
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    border-radius: var(--border-radius-box);
+    padding: 40px 10px;
+    margin-top: 50px;
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: orange;
+}
+
+.btn{
+    margin: 10px;
+    padding: 10px 10px;
+    border: none;
+    background-color: #FF0266;
+    color: black;
+    transition: all .5s;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    box-shadow: 0px 1px 5px 0px rgba(161,161,161,1);
+    text-shadow: 0 0 3px gray;
+    font-size: x-large;
+    text-shadow: 0 0 1px black;
+    font-family: inherit;
+
+
+
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .start-container {
+        width: 90%;
+    }
+
+}
+</style>
+<body>
+
+    <div class="top-container">
+        <div class="start-container">
+            <div>
+                <button id="1" class="btn" onclick="window.location = `typing-test-javascript-1.1.1`">Typing-Test App</button>
+            </div>
+            <div>
+                <button id="2" class="btn" onclick="window.location = `To-Do-App-Javascript-1.0.1`">To-Do App</button>
+            </div>
+            <div>
+                <button id="3" class="btn" onclick="window.location = `shoppingCart-javascript`">Shopping-Cart App</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
