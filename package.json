@@ -1,0 +1,15 @@
+{
+  "name": "typing-test-javascript-1.1.1",
+  "version": "1.0.0",
+  "description": "Allows you to test your typing speed.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
